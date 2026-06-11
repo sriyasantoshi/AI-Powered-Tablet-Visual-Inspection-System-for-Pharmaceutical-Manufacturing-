@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Gallery</h1>
+        </header>
+
+        <div class="upload-zone">
+            <input type="file" id="fileInput" accept="image/*" multiple>
+            <label for="fileInput">
+                <div class="upload-content">
+                    <p class="upload-text">Drop images here</p>
+                    <p class="upload-hint">or click to select</p>
+                </div>
+            </label>
+            <button id="uploadBtn" class="upload-button">Upload</button>
+        </div>
+
+        <div class="toolbar">
+            <span id="imageCount" class="count">Loading...</span>
+            <button id="refreshBtn" class="btn-refresh">Refresh</button>
+        </div>
+
+        <div id="gallery" class="gallery">
+            <div class="loading">Loading...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
